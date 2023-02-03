@@ -1,0 +1,9 @@
+{% extends 'web/main.html' %}
+{% block title %}{{ post.title }}{{ endblock }}
+{% block content %}
+    <a href="">{{ post.title }}</a>
+    <p class="date">
+        Published {{ post.publish }} by {{ post.author }}
+    </p>
+    {{ post.body|lonebreaks }}
+{% endblock %}

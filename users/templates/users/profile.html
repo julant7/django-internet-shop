@@ -1,0 +1,11 @@
+{% extends 'web/main.html/' %}
+{% block title %} Profile Page {% endblock title %}
+{% block content %}
+    <div>
+        <h1>Personal Data</h1>
+        <div>First name {{ user.first_name }}</div>
+        <div>Last name {{ user.last_name }}</div>
+        <div>Date joined {{ user.date_joined.date }}</div>
+    </div>
+
+{% endblock content %}
